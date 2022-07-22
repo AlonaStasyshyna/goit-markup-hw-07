@@ -18,15 +18,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка -->
     <header class="header">
       <div class="container">
         <nav class="main-nav">
-          <a class="logo" href="./index.html" lang="en"
-            >Web<span class="logo--dark">Studio</span></a
+          <a class="header__logo" href="./index.html" lang="en"
+            >Web<span class="header__logo--dark">Studio</span></a
           >
 
           <ul class="site-nav">
@@ -375,8 +375,8 @@
       <div class="container">
         <!-- Навигация в футере -->
         <div class="footer-nav">
-          <a class="logo" href="./index.html" lang="en"
-            >Web<span class="logo--light">Studio</span></a
+          <a class="footer__logo" href="./index.html" lang="en"
+            >Web<span class="footer__logo--light">Studio</span></a
           >
 
           <address class="address">
@@ -455,67 +455,67 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <!-- Кнопка закрытия -->
-        <button class="close-btn" type="button" data-modal-close>
+        <button class="modal__close-btn" type="button" data-modal-close>
           <svg width="11" height="11">
             <use href="./images/icons.svg#close-icon"></use>
           </svg>
         </button>
 
-        <strong class="modal-phrase">Оставьте свои данные, мы вам перезвоним</strong>
+        <strong class="modal__title">Оставьте свои данные, мы вам перезвоним</strong>
 
         <!-- Форма для заполнения -->
         <form class="form">
-          <label class="form-field">
-            <span class="field-name">Имя</span>
-            <input class="form-input" type="text" name="name" />
-            <span class="field-icon"
+          <label class="form__field">
+            <span class="form__field-name">Имя</span>
+            <input class="form__input" type="text" name="name" />
+            <span class="field__icon"
               ><svg width="18" height="18">
                 <use href="./images/icons.svg#person-icon"></use></svg
             ></span>
           </label>
-          <label class="form-field">
-            <span class="field-name">Телефон</span>
-            <input class="form-input" type="tel" name="tel" />
-            <span class="field-icon"
+          <label class="form__field">
+            <span class="form__field-name">Телефон</span>
+            <input class="form__input" type="tel" name="tel" />
+            <span class="field__icon"
               ><svg width="18" height="18">
                 <use href="./images/icons.svg#phone-icon"></use></svg
             ></span>
           </label>
-          <label class="form-field">
-            <span class="field-name">Почта</span>
-            <input class="form-input" type="email" name="email" />
-            <span class="field-icon"
+          <label class="form__field">
+            <span class="form__field-name">Почта</span>
+            <input class="form__input" type="email" name="email" />
+            <span class="field__icon"
               ><svg width="18" height="18">
                 <use href="./images/icons.svg#email-icon"></use></svg
             ></span>
           </label>
-          <label class="form-field">
-            <span class="field-name">Комментарий</span>
+          <label class="form__field">
+            <span class="form__field-name">Комментарий</span>
             <textarea
-              class="field-comment"
+              class="form__comment"
               name="comment"
               rows="5"
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <label class="form-checkbox">
+          <label class="form__agreement">
             <input
-              class="checkbox visually-hidden"
+              class="form__checkbox visually-hidden"
               type="checkbox"
               name="policy"
               value="agreement"
             />
-            <span class="checkbox-icon"
+            <span class="form__check-mark"
               ><svg width="16" height="15">
                 <use href="./images/icons.svg#icon-check"></use></svg
             ></span>
-            <span class="checkbox-text"
+            <span
               >Соглашаюсь с рассылкой и принимаю
-              <a href="" class="checkbox-link">Условия договора</a>
+              <a href="" class="form__policy">Условия договора</a>
             </span>
           </label>
 
-          <button class="button submit-button" type="submit">Отправить</button>
+          <button class="button form__button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
